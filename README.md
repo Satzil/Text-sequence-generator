@@ -1,8 +1,8 @@
-# Text Sequence Generation using NLP
+# Text Sequence Generator using NLP
 
 ## Introduction
 
-A Text Sequence Generation using NLP is a model or system designed to generate coherent and contextually relevant text sequences. These generators utilize Natural Language Processing (NLP) techniques and often rely on deep learning models, such as recurrent neural networks (RNNs). 
+A Text Sequence Generator using NLP is a model or system designed to generate coherent and contextually relevant text sequences. These generators utilize Natural Language Processing (NLP) techniques and often rely on deep learning models, such as recurrent neural networks (RNNs). 
 
 ## Text Preprocessing:
 
@@ -42,10 +42,12 @@ It is the word-to-index mapping that the tokenizer has learned. It will display 
     [6, 33, 34, 4, 5, 1, 17, 2, 35, 3, 1, 36, 10, 37, 6, 38, 39, 11]
 
 
-- Then, it generates multiple input-output pairs by considering all possible sub-sequences of the original sequence.
+Then, it generates multiple input-output pairs by considering all possible sub-sequences of the original sequence.
+
 > the movie was absolutely fantastic! the plot was engaging, and the acting was superb. i was on the edge of my seat the entire time.
 
     [[1, 5], [1, 5, 2], [1, 5, 2, 25], [1, 5, 2, 25, 26], [1, 5, 2, 25, 26, 1], [1, 5, 2, 25, 26, 1, 13], [1, 5, 2, 25, 26, 1, 13, 2], [1, 5, 2, 25, 26, 1, 13, 2, 27], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16, 30], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16, 30, 1], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16, 30, 1, 31], [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16, 30, 1, 31, 32]]
+
 
 These sub-sequences are used as input sequences, and the last element of each sub-sequence is used as the corresponding label or output.
 
