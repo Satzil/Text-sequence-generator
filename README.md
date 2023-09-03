@@ -1,8 +1,8 @@
-# Text Sequence Generator using NLP
+# Text Sequence Generation using NLP
 
 ## Introduction
 
-A Text Sequence Generator using NLP is a model or system designed to generate coherent and contextually relevant text sequences. These generators utilize Natural Language Processing (NLP) techniques and often rely on deep learning models, such as recurrent neural networks (RNNs). 
+A Text Sequence Generation using NLP is a model or system designed to generate coherent and contextually relevant text sequences. These generators utilize Natural Language Processing (NLP) techniques and often rely on deep learning models, such as recurrent neural networks (RNNs). 
 
 ## Text Preprocessing:
 
@@ -34,10 +34,12 @@ It is the word-to-index mapping that the tokenizer has learned. It will display 
 **Some of the generated sequences from the texts** 
 
 > the movie was absolutely fantastic! the plot was engaging, and the acting was superb. i was on the edge of my seat the entire time.
-[1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16, 30, 1, 31, 32]
+
+    [1, 5, 2, 25, 26, 1, 13, 2, 27, 3, 1, 14, 2, 28, 6, 2, 15, 1, 29, 9, 16, 30, 1, 31, 32]
 
  >i couldn't stand this movie. the story was confusing, and the characters felt flat. i regret watching it.
-[6, 33, 34, 4, 5, 1, 17, 2, 35, 3, 1, 36, 10, 37, 6, 38, 39, 11]
+
+    [6, 33, 34, 4, 5, 1, 17, 2, 35, 3, 1, 36, 10, 37, 6, 38, 39, 11]
 
 
 - Then, it generates multiple input-output pairs by considering all possible sub-sequences of the original sequence.
@@ -161,7 +163,6 @@ After all iterations are completed, the code prints the generated text. This tex
 The generated text appears to have repetitions and lacks coherence, which is a common issue in text generation models. This can happen due to various reasons, including limitations in the training data, model architecture, and training process.
 
 We have to ensure that the training data is diverse and high-quality. The model's output is often influenced by the patterns and quality of the data it was trained on. A more extensive and diverse dataset can lead to better text generation.
-
 
 
 
