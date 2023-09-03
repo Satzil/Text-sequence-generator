@@ -1,8 +1,8 @@
-# Text Sequence Generator using NLP
+# Text Sequence Generation using NLP
 
 ## Introduction
 
-A Text Sequence Generator using NLP is a model or system designed to generate coherent and contextually relevant text sequences. These generators utilize Natural Language Processing (NLP) techniques and often rely on deep learning models, such as recurrent neural networks (RNNs). 
+Text Sequence Generation using NLP is a model or system designed to generate coherent and contextually relevant text sequences. These generators utilize Natural Language Processing (NLP) techniques and often rely on deep learning models, such as recurrent neural networks (RNNs). 
 
 ## Text Preprocessing:
 
